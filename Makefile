@@ -1,24 +1,39 @@
-test-cqp:
-	$s -xsl:bin/siius2vert.xsl CLARIN/CPZ1906.ana.xml | $l > CLARIN/CPZ1906.vert
+### From DARIAH from-Word generated digital library in TEI
+### to CLARIN linguistically annotated and published corpus
+
+#################################################
+## System variables / location of prerequisites
+p = parallel --gnu --halt 0 --jobs 5
+j = java -jar /usr/share/java/jing.jar
+s = java -jar /usr/share/java/saxon-he-10.2.jar
+classla = /usr/local/classla-venv
+venv = ${classla}/bin/activate
+python = ${classla}/bin/python
+
+### Test run on one file:
+# Annotate with CLASSLA
 test-ana:
 	source ${venv}; ${python} bin/tag.py < CLARIN/SlP1920.txt > CLARIN/SlP1920.conllu
-test-tei:
-	bin/conllu2tei.pl CLARIN/CPZ1906.conllu < CLARIN/CPZ1906.crp.xml > CLARIN/CPZ1906.ana.xml
-	$j schema/tei_ius.rng CLARIN/CPZ1906.ana.xml
-test-cnv:
-	$s -xsl:bin/tei2ana.xsl CLARIN/CPZ1906.xml > CLARIN/CPZ1906.xml
-	$j schema/tei_ius.rng CLARIN/CPZ1906.xml
 
+
+# Run everything off line
 nohup:
 	nohup time make all > process.log &
+# Active workflow
 all:	dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
+# Complete workflow
 xall:	val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
 
+## Prepare for concordancers outside of git
+## in clarinsi-cqp/config/general.tbl:
+## siius monolingual new-tantra.ijs.si /project/corpora/SI-IUS/CQP/siius.vert.gz
+CQPDIR = /project/corpora/SI-IUS/CQP/
 vert:
-	cat CLARIN/*.vert > CQP/siius.vert
-	rm -f CQP/siius.vert.gz
-	gzip CQP/siius.vert
+	cat CLARIN/*.vert > ${CQPDIR}/siius.vert
+	rm -f ${CQPDIR}/siius.vert.gz
+	gzip ${CQPDIR}/siius.vert
 
+## Prepare vertical files
 l = bin/polish-ud.pl
 cqp:
 	$s -xsl:bin/siius2vert.xsl CLARIN/CPZ1906.ana.xml | $l > CLARIN/CPZ1906.vert
@@ -29,7 +44,7 @@ cqp:
 	$s -xsl:bin/siius2vert.xsl CLARIN/ZKP1890.ana.xml | $l > CLARIN/ZKP1890.vert
 	$s -xsl:bin/siius2vert.xsl CLARIN/ZKP1929.ana.xml | $l > CLARIN/ZKP1929.vert
 val-ana:
-	-$j schema/tei_ius.rng CLARIN/*.ana.xml
+	-$j Schema/tei_ius.rng CLARIN/*.ana.xml
 	-$s -xsl:bin/check-links.xsl CLARIN/CPZ1906.ana.xml
 	-$s -xsl:bin/check-links.xsl CLARIN/ODZ1928.ana.xml
 	-$s -xsl:bin/check-links.xsl CLARIN/SlP1917.ana.xml
@@ -62,7 +77,7 @@ text:
 	$s -xsl:bin/ana2txt.xsl CLARIN/ZKP1890.crp.xml > CLARIN/ZKP1890.txt
 	$s -xsl:bin/ana2txt.xsl CLARIN/ZKP1929.crp.xml > CLARIN/ZKP1929.txt
 val-crp:
-	-$j schema/tei_ius.rng CLARIN/*.crp.xml
+	-$j Schema/tei_ius.rng CLARIN/*.crp.xml
 tei2crp:
 	$s -xsl:bin/siius2crp.xsl CLARIN/CPZ1906.xml > CLARIN/CPZ1906.crp.xml
 	$s -xsl:bin/siius2crp.xsl CLARIN/ODZ1928.xml > CLARIN/ODZ1928.crp.xml
@@ -73,7 +88,7 @@ tei2crp:
 	$s -xsl:bin/siius2crp.xsl CLARIN/ZKP1929.xml > CLARIN/ZKP1929.crp.xml
 
 val-tei:
-	-$j schema/tei_ius.rng CLARIN/*.xml
+	-$j Schema/tei_ius.rng CLARIN/*.xml
 pdfs:
 	cp DARIAH/cpz/A1CPP1906.pdf CLARIN/CPZ1906.pdf
 	# cp DARIAH/odz/???.pdf CLARIN/ODZ1928.xml
@@ -93,18 +108,10 @@ dariah2tei:
 	$s id=ZKP1890 -xsl:bin/siius2tei.xsl DARIAH/zkp1890/ZKP.xml > CLARIN/ZKP1890.xml
 	$s id=ZKP1929 -xsl:bin/siius2tei.xsl DARIAH/zkp1929/ZKP1929.xml > CLARIN/ZKP1929.xml
 val-origin:
-	-$j schema/tei_ius.rng DARIAH/cpz/CPZ.xml
-	-$j schema/tei_ius.rng DARIAH/odz/ODZ.xml
-	-$j schema/tei_ius.rng DARIAH/slovenskipravnik1917/SlPr1917.xml
-	-$j schema/tei_ius.rng DARIAH/slovenskipravnik1920/SlPr1920.xml
-	-$j schema/tei_ius.rng DARIAH/ustvol/UstVol.xml
-	-$j schema/tei_ius.rng DARIAH/zkp1890/ZKP.xml
-	-$j schema/tei_ius.rng DARIAH/zkp1929/ZKP1929.xml
-#################################################
-p = parallel --gnu --halt 0 --jobs 5
-j = java -jar /usr/share/java/jing.jar
-s = java -jar /usr/share/java/saxon-he-10.2.jar
-
-classla = /usr/local/classla-venv
-venv = ${classla}/bin/activate
-python = ${classla}/bin/python
+	-$j Schema/tei_ius.rng DARIAH/cpz/CPZ.xml
+	-$j Schema/tei_ius.rng DARIAH/odz/ODZ.xml
+	-$j Schema/tei_ius.rng DARIAH/slovenskipravnik1917/SlPr1917.xml
+	-$j Schema/tei_ius.rng DARIAH/slovenskipravnik1920/SlPr1920.xml
+	-$j Schema/tei_ius.rng DARIAH/ustvol/UstVol.xml
+	-$j Schema/tei_ius.rng DARIAH/zkp1890/ZKP.xml
+	-$j Schema/tei_ius.rng DARIAH/zkp1929/ZKP1929.xml

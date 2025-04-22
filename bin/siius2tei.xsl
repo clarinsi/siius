@@ -66,10 +66,10 @@
         <xsl:when test="$titlePage//tei:docDate">
           <xsl:value-of select="replace($titlePage//tei:docDate, '\.$', '')"/>
         </xsl:when>
-        <xsl:when test="/tei:TEI/tei:text/tei:body/tei:div[1]/tei:head = 'Slovenski Pravnik.'">
+        <xsl:when test="contains($id, '1917')">
           <xsl:text>1917</xsl:text>
         </xsl:when>
-        <xsl:when test="/tei:TEI/tei:text/tei:body/tei:div[2]/tei:head/text()[1] = 'SLOVENSKI PRAVNIK.'">
+        <xsl:when test="contains($id, '1920')">
           <xsl:text>1920</xsl:text>
         </xsl:when>
         <xsl:otherwise>

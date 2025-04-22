@@ -2,7 +2,7 @@
 # Finalise XSLT produced vertical file with UD annotations:
 # - remove namespace definitions
 # - de escape XML entities
-# - add Slovene MTE V6 MSD to English one, both for token and head
+# - add Slovene MTE V6 MSD to English one
 # - change token lemma to lemma-pos with Slovene PoS
 #
 use warnings;
