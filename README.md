@@ -10,21 +10,15 @@ The source texts in their complex TEI encoding which are available from
 [DARIAH/](DARIAH/) directory, are first modified (esp. their teiHeader is initialised)
 and stored in the [CLARIN/](CLARIN/) directory, as are all output files.
 
-....
+The encoding of the TEI encoded files is then simplified, plain text is extracted from them,
+and these are then linguistically annotated with CLASSLA, giving CoNLL-U files. Finally,
+the CoNLL-U is converted to TEI and merged with the simpilified TEI files (CLARIN/*.crp.xml)
+resulting in the final TEI encoded and linguistically annotated files (CLARIN/*.ana.xml).
+These TEI/XML encoded files are then also down-converted into vertical format that are used
+for mounting on CQP-compatbile concordancers.
+Note that all linguistically annotated files are, due to their size, gitignored but are
+available on the CLARIN.SI repository.
 
-The complete Git sources are stored in the gitignored GitGroup/ directory,
-just the TEI XML documents in the DARIAH/ directory, 
-the conversion scripts in the bin/ directory (and the Makefile),
-and the output corpus files in the CLARIN/ directory.
-
-As further work it will be PoS tagged, and lemmatised with annotated
-term candidates, converted to vertical file and made available under
-the CLARIN.SI concordancers.
-
-
-
-
-The compilation of the siIUS digital library is supported by
-DARIAH-SI, and the compliation of the siIUS annotated corpus by
-CLARIN.SI.
+The compilation of the SI-IUS digital library was supported by DARIAH-SI,
+and the compliation of the SI-IUS annotated corpus by CLARIN.SI.
 
