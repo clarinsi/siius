@@ -1,0 +1,11 @@
+DARIAH
+*.crp.xml
+*.ana.xml
+*.conllu
+*.vert
+tmp
+nohup.*
+*.gz
+*.zip
+*.tar
+*.diff
