@@ -3,16 +3,16 @@ test-cqp:
 test-ana:
 	source ${venv}; ${python} bin/tag.py < CLARIN/SlP1920.txt > CLARIN/SlP1920.conllu
 test-tei:
-	#bin/conllu2tei.pl CLARIN/CPZ1906.conllu < CLARIN/CPZ1906.crp.xml > CLARIN/CPZ1906.ana.xml
+	bin/conllu2tei.pl CLARIN/CPZ1906.conllu < CLARIN/CPZ1906.crp.xml > CLARIN/CPZ1906.ana.xml
 	$j schema/tei_ius.rng CLARIN/CPZ1906.ana.xml
 test-cnv:
-	#$s -xsl:bin/tei2ana.xsl CLARIN/CPZ1906.xml > CLARIN/CPZ1906.xml
+	$s -xsl:bin/tei2ana.xsl CLARIN/CPZ1906.xml > CLARIN/CPZ1906.xml
 	$j schema/tei_ius.rng CLARIN/CPZ1906.xml
 
 nohup:
 	nohup time make all > process.log &
 all:	dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
-xall:	get val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
+xall:	val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
 
 vert:
 	cat CLARIN/*.vert > CQP/siius.vert
