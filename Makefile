@@ -74,6 +74,16 @@ tei2crp:
 
 val-tei:
 	-$j schema/tei_ius.rng CLARIN/*.xml
+pdfs:
+	cp DARIAH/cpz/A1CPP1906.pdf CLARIN/CPZ1906.pdf
+	# cp DARIAH/odz/???.pdf CLARIN/ODZ1928.xml
+	cp DARIAH/slovenskipravnik1917/Slovenski_URN_NBN_SI_doc-4RRLU5S5.pdf CLARIN/SlP1917-1.pdf
+	cp DARIAH/slovenskipravnik1917/Slovenski_URN_NBN_SI_doc-WVXGJ01V.pdf CLARIN/SlP1917-2.pdf
+	cp DARIAH/slovenskipravnik1920/id-4695299.pdf CLARIN/SlP1920.pdf
+	cp DARIAH/ustvol/A1UstVol1860.pdf CLARIN/UsV1910.pdf
+	cp DARIAH/zkp1890/A1ZKP1890.pdf CLARIN/ZKP1890.pdf
+	cp DARIAH/zkp1929/id-243499_1929.pdf CLARIN/ZKP1929.pdf
+
 dariah2tei:
 	$s id=CPZ1906 -xsl:bin/siius2tei.xsl DARIAH/cpz/CPZ.xml > CLARIN/CPZ1906.xml
 	$s id=ODZ1928 -xsl:bin/siius2tei.xsl DARIAH/odz/ODZ.xml > CLARIN/ODZ1928.xml

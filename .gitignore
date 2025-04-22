@@ -1,6 +1,7 @@
 *.ana.xml
 *.conllu
 *.vert
+*.pdf
 tmp
 nohup.*
 *.gz
