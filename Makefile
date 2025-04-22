@@ -90,15 +90,6 @@ val-origin:
 	-$j schema/tei_ius.rng DARIAH/ustvol/UstVol.xml
 	-$j schema/tei_ius.rng DARIAH/zkp1890/ZKP.xml
 	-$j schema/tei_ius.rng DARIAH/zkp1929/ZKP1929.xml
-get:
-	cd DARIAH/cpz/; git pull origin
-	cd DARIAH/odz/; git pull origin
-	cd DARIAH/slovenskipravnik1917/; git pull origin
-	cd DARIAH/slovenskipravnik1920/; git pull origin
-	cd DARIAH/ustvol/; git pull origin
-	cd DARIAH/zkp1890/; git pull origin
-	cd DARIAH/zkp1929/; git pull origin
-
 #################################################
 p = parallel --gnu --halt 0 --jobs 5
 j = java -jar /usr/share/java/jing.jar
