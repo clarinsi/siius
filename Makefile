@@ -1,9 +1,3 @@
-H = /project/corpora/SI-IUS/siius/bin
-html:	
-	bin/Stylesheets/bin/teitohtml --profiledir=$H --profile=profile --localsource=bin/p5subset.xml \
-	CLARIN/CPZ1906.xml docs/CPZ1906.html
-
-
 ### From DARIAH from-Word generated digital library in TEI
 ### to CLARIN linguistically annotated and published corpus
 
@@ -21,14 +15,13 @@ python = ${classla}/bin/python
 test-ana:
 	source ${venv}; ${python} bin/tag.py < CLARIN/SlP1920.txt > CLARIN/SlP1920.conllu
 
-
 # Run everything off line
 nohup:
 	nohup time make all > Master/process.log &
 # Active workflow
-all:	dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert pack
+all:	dariah2tei val-tei html tei2crp val-crp text ana conllu2tei val-ana cqp vert pack 
 # Complete workflow
-xall:	val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert pack
+xall:	val-origin dariah2tei val-tei html tei2crp val-crp text ana conllu2tei val-ana cqp vert pack
 
 # Make two zip files for CLARIN.SI repo
 pack:
@@ -97,6 +90,15 @@ tei2crp:
 	$s -xsl:bin/siius2crp.xsl CLARIN/ZKP1890.xml > CLARIN/ZKP1890.crp.xml
 	$s -xsl:bin/siius2crp.xsl CLARIN/ZKP1929.xml > CLARIN/ZKP1929.crp.xml
 
+S = bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml 
+html:	
+	$S CLARIN/CPZ1906.xml docs/CPZ1906.html
+	$S CLARIN/ODZ1928.xml docs/ODZ1928.html
+	$S CLARIN/SlP1917.xml docs/SlP1917.html
+	$S CLARIN/SlP1920.xml docs/SlP1920.html
+	$S CLARIN/UsV1910.xml docs/UsV1910.html
+	$S CLARIN/ZKP1890.xml docs/ZKP1890.html
+	$S CLARIN/ZKP1929.xml docs/ZKP1929.html
 val-tei:
 	-$j Schema/tei_ius.rng CLARIN/*.xml
 pdfs:
