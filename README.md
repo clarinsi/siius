@@ -17,7 +17,7 @@ The CoNLL-U is converted to TEI and merged with the simpilified TEI files
 resulting in the final TEI encoded and linguistically annotated files (`CLARIN/*.ana.xml`).
 These TEI/XML encoded files are also down-converted into vertical format (`CLARIN/*.vert`)
 that are used for mounting on CQP-compatbile concordancers.
-The resulting files are copied and compressed to the [Master/]{`Master/`} directory from where
+The resulting files are copied and compressed to the [Master/](`Master/`) directory from where
 they are uploaded to the CLARIN.SI repository.
 
 Note that all linguistically annotated files are, due to their size, gitignored but are
