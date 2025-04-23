@@ -1,3 +1,9 @@
+H = /project/corpora/SI-IUS/siius/bin
+html:	
+	bin/Stylesheets/bin/teitohtml --profiledir=$H --profile=profile --localsource=bin/p5subset.xml \
+	CLARIN/CPZ1906.xml docs/CPZ1906.html
+
+
 ### From DARIAH from-Word generated digital library in TEI
 ### to CLARIN linguistically annotated and published corpus
 
