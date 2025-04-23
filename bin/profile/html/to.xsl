@@ -29,13 +29,17 @@
    <xsl:param name="outputName">parla-clarin</xsl:param-->
    <xsl:param name="outputEncoding">utf-8</xsl:param>
    <xsl:param name="splitLevel">-1</xsl:param>
+   <xsl:param name="class_toc">toc</xsl:param>
+   <xsl:param name="class_subtoc">subtoc</xsl:param>
    <xsl:param name="autoToc">true</xsl:param>
-   <xsl:param name="tocFront">false</xsl:param>
+   <xsl:param name="tocFront">true</xsl:param>
    <xsl:param name="tocBack">true</xsl:param>
    <xsl:param name="tocDepth">1</xsl:param>
    <xsl:param name="subTocDepth">5</xsl:param>
    <xsl:param name="numberHeadings">false</xsl:param>
-   <xsl:param name="numberFigures"/>
+   <xsl:param name="numberFigures">false</xsl:param>
    <xsl:param name="footnoteBackLink">true</xsl:param>
+   <xsl:param name="topNavigationPanel">true</xsl:param>
    <xsl:param name="autoEndNotes">true</xsl:param>
+   <xsl:param name="pagebreakStyle">visible</xsl:param>
 </xsl:stylesheet>
