@@ -6,8 +6,8 @@ pack:
 	mkdir -p SI-IUS.TEI/Schema
 	cp Docs/README.TEI.txt SI-IUS.TEI/00README.txt
 	cp ../CLARIN/???????.xml SI-IUS.TEI
-	cp ../Schema/tei_ius* SI-IUS.TEI.ana/Schema
-	cp ../docs/tei*.* SI-IUS.TEI.ana/Schema
+	cp ../Schema/tei_ius* SI-IUS.TEI/Schema
+	cp ../docs/tei*.* SI-IUS.TEI/Schema
 	rm -f SI-IUS.TEI.zip
 	zip -r SI-IUS.TEI.zip SI-IUS.TEI
 

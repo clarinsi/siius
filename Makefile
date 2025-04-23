@@ -18,11 +18,15 @@ test-ana:
 
 # Run everything off line
 nohup:
-	nohup time make all > process.log &
+	nohup time make all > Master/process.log &
 # Active workflow
-all:	dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
+all:	dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert pack
 # Complete workflow
-xall:	val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert
+xall:	val-origin dariah2tei val-tei tei2crp val-crp text ana conllu2tei val-ana cqp vert pack
+
+# Make two zip files for CLARIN.SI repo
+pack:
+	cd Master; make pack
 
 ## Prepare for concordancers outside of git
 ## in clarinsi-cqp/config/general.tbl:
