@@ -7,6 +7,62 @@ java -jar /usr/share/java/saxon-he-10.2.jar id=UsV1910 -xsl:bin/siius2tei.xsl DA
 java -jar /usr/share/java/saxon-he-10.2.jar id=ZKP1890 -xsl:bin/siius2tei.xsl DARIAH/zkp1890/ZKP.xml > CLARIN/ZKP1890.xml
 java -jar /usr/share/java/saxon-he-10.2.jar id=ZKP1929 -xsl:bin/siius2tei.xsl DARIAH/zkp1929/ZKP1929.xml > CLARIN/ZKP1929.xml
 java -jar /usr/share/java/jing.jar Schema/tei_ius.rng CLARIN/*.xml
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/CPZ1906.xml docs/CPZ1906.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/CPZ1906.xml to /project/corpora/SI-IUS/siius/docs/CPZ1906.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/CPZ1906.xml, out /project/corpora/SI-IUS/siius/docs/CPZ1906.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/ODZ1928.xml docs/ODZ1928.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/ODZ1928.xml to /project/corpora/SI-IUS/siius/docs/ODZ1928.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/ODZ1928.xml, out /project/corpora/SI-IUS/siius/docs/ODZ1928.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/SlP1917.xml docs/SlP1917.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/SlP1917.xml to /project/corpora/SI-IUS/siius/docs/SlP1917.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/SlP1917.xml, out /project/corpora/SI-IUS/siius/docs/SlP1917.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/SlP1920.xml docs/SlP1920.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/SlP1920.xml to /project/corpora/SI-IUS/siius/docs/SlP1920.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/SlP1920.xml, out /project/corpora/SI-IUS/siius/docs/SlP1920.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/UsV1910.xml docs/UsV1910.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/UsV1910.xml to /project/corpora/SI-IUS/siius/docs/UsV1910.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/UsV1910.xml, out /project/corpora/SI-IUS/siius/docs/UsV1910.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/ZKP1890.xml docs/ZKP1890.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/ZKP1890.xml to /project/corpora/SI-IUS/siius/docs/ZKP1890.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/ZKP1890.xml, out /project/corpora/SI-IUS/siius/docs/ZKP1890.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+bin/Stylesheets/bin/teitohtml --profiledir=/project/corpora/SI-IUS/siius/bin --profile=profile --localsource=bin/p5subset.xml  CLARIN/ZKP1929.xml docs/ZKP1929.html
+using local file /project/corpora/SI-IUS/siius/bin/p5subset.xml as default source
+Convert /project/corpora/SI-IUS/siius/CLARIN/ZKP1929.xml to /project/corpora/SI-IUS/siius/docs/ZKP1929.html (tei to html) using profile profile lang=en
+     [echo] XSLT generate HTML files (language en, style /project/corpora/SI-IUS/siius/bin/profile/html/to.xsl, in /project/corpora/SI-IUS/siius/CLARIN/ZKP1929.xml, out /project/corpora/SI-IUS/siius/docs/ZKP1929.html)
+Warning: XML resolver not found; external catalogs will be ignored
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2crp.xsl CLARIN/CPZ1906.xml > CLARIN/CPZ1906.crp.xml
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2crp.xsl CLARIN/ODZ1928.xml > CLARIN/ODZ1928.crp.xml
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2crp.xsl CLARIN/SlP1917.xml > CLARIN/SlP1917.crp.xml
@@ -24,7 +80,7 @@ java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/ana2txt.xsl CLARIN/ZKP1890.
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/ana2txt.xsl CLARIN/ZKP1929.crp.xml > CLARIN/ZKP1929.txt
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/CPZ1906.txt > CLARIN/CPZ1906.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:10:26 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 13:43:19 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -33,14 +89,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:10:26 INFO: Use device: cpu
-2025-04-22 23:10:26 INFO: Loading: tokenize
-2025-04-22 23:10:26 INFO: Loading: pos
-2025-04-22 23:11:56 INFO: Loading: lemma
-2025-04-22 23:12:23 INFO: Done loading processors!
+2025-04-23 13:43:19 INFO: Use device: cpu
+2025-04-23 13:43:19 INFO: Loading: tokenize
+2025-04-23 13:43:19 INFO: Loading: pos
+2025-04-23 13:44:49 INFO: Loading: lemma
+2025-04-23 13:45:15 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/ODZ1928.txt > CLARIN/ODZ1928.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:16:01 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:11:05 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -49,14 +105,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:16:01 INFO: Use device: cpu
-2025-04-22 23:16:01 INFO: Loading: tokenize
-2025-04-22 23:16:01 INFO: Loading: pos
-2025-04-22 23:17:27 INFO: Loading: lemma
-2025-04-22 23:17:53 INFO: Done loading processors!
+2025-04-23 14:11:05 INFO: Use device: cpu
+2025-04-23 14:11:05 INFO: Loading: tokenize
+2025-04-23 14:11:05 INFO: Loading: pos
+2025-04-23 14:12:34 INFO: Loading: lemma
+2025-04-23 14:13:01 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/SlP1917.txt > CLARIN/SlP1917.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:19:51 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:15:15 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -65,14 +121,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:19:51 INFO: Use device: cpu
-2025-04-22 23:19:51 INFO: Loading: tokenize
-2025-04-22 23:19:51 INFO: Loading: pos
-2025-04-22 23:21:17 INFO: Loading: lemma
-2025-04-22 23:21:43 INFO: Done loading processors!
+2025-04-23 14:15:15 INFO: Use device: cpu
+2025-04-23 14:15:15 INFO: Loading: tokenize
+2025-04-23 14:15:15 INFO: Loading: pos
+2025-04-23 14:16:42 INFO: Loading: lemma
+2025-04-23 14:17:09 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/SlP1920.txt > CLARIN/SlP1920.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:23:21 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:23:00 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -81,14 +137,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:23:21 INFO: Use device: cpu
-2025-04-22 23:23:21 INFO: Loading: tokenize
-2025-04-22 23:23:21 INFO: Loading: pos
-2025-04-22 23:24:45 INFO: Loading: lemma
-2025-04-22 23:25:12 INFO: Done loading processors!
+2025-04-23 14:23:00 INFO: Use device: cpu
+2025-04-23 14:23:00 INFO: Loading: tokenize
+2025-04-23 14:23:00 INFO: Loading: pos
+2025-04-23 14:24:26 INFO: Loading: lemma
+2025-04-23 14:24:53 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/UsV1910.txt > CLARIN/UsV1910.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:28:00 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:35:12 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -97,14 +153,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:28:00 INFO: Use device: cpu
-2025-04-22 23:28:00 INFO: Loading: tokenize
-2025-04-22 23:28:00 INFO: Loading: pos
-2025-04-22 23:29:25 INFO: Loading: lemma
-2025-04-22 23:29:51 INFO: Done loading processors!
+2025-04-23 14:35:12 INFO: Use device: cpu
+2025-04-23 14:35:12 INFO: Loading: tokenize
+2025-04-23 14:35:12 INFO: Loading: pos
+2025-04-23 14:36:39 INFO: Loading: lemma
+2025-04-23 14:37:05 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/ZKP1890.txt > CLARIN/ZKP1890.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:31:50 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:46:14 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -113,14 +169,14 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:31:50 INFO: Use device: cpu
-2025-04-22 23:31:50 INFO: Loading: tokenize
-2025-04-22 23:31:50 INFO: Loading: pos
-2025-04-22 23:33:14 INFO: Loading: lemma
-2025-04-22 23:33:39 INFO: Done loading processors!
+2025-04-23 14:46:14 INFO: Use device: cpu
+2025-04-23 14:46:14 INFO: Loading: tokenize
+2025-04-23 14:46:14 INFO: Loading: pos
+2025-04-23 14:47:42 INFO: Loading: lemma
+2025-04-23 14:48:07 INFO: Done loading processors!
 source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python bin/tag.py < CLARIN/ZKP1929.txt > CLARIN/ZKP1929.conllu
 /bin/sh: 1: source: not found
-2025-04-22 23:35:19 INFO: Loading these models for language: sl (Slovenian):
+2025-04-23 14:54:39 INFO: Loading these models for language: sl (Slovenian):
 ========================
 | Processor | Package  |
 ------------------------
@@ -129,11 +185,11 @@ source /usr/local/classla-venv/bin/activate; /usr/local/classla-venv/bin/python 
 | lemma     | standard |
 ========================
 
-2025-04-22 23:35:19 INFO: Use device: cpu
-2025-04-22 23:35:19 INFO: Loading: tokenize
-2025-04-22 23:35:19 INFO: Loading: pos
-2025-04-22 23:36:44 INFO: Loading: lemma
-2025-04-22 23:37:11 INFO: Done loading processors!
+2025-04-23 14:54:39 INFO: Use device: cpu
+2025-04-23 14:54:39 INFO: Loading: tokenize
+2025-04-23 14:54:39 INFO: Loading: pos
+2025-04-23 14:56:06 INFO: Loading: lemma
+2025-04-23 14:56:32 INFO: Done loading processors!
 bin/conllu2tei.pl CLARIN/CPZ1906.conllu < CLARIN/CPZ1906.crp.xml > CLARIN/CPZ1906.ana.xml
 bin/conllu2tei.pl CLARIN/ODZ1928.conllu < CLARIN/ODZ1928.crp.xml > CLARIN/ODZ1928.ana.xml
 bin/conllu2tei.pl CLARIN/SlP1917.conllu < CLARIN/SlP1917.crp.xml > CLARIN/SlP1917.ana.xml
@@ -146,37 +202,37 @@ java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/CPZ1
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:52: val-ana] Error 2 (ignored)
+make[1]: [Makefile:51: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/ODZ1928.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:53: val-ana] Error 2 (ignored)
+make[1]: [Makefile:52: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/SlP1917.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:54: val-ana] Error 2 (ignored)
+make[1]: [Makefile:53: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/SlP1920.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:55: val-ana] Error 2 (ignored)
+make[1]: [Makefile:54: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/UsV1910.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:56: val-ana] Error 2 (ignored)
+make[1]: [Makefile:55: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/ZKP1890.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:57: val-ana] Error 2 (ignored)
+make[1]: [Makefile:56: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/check-links.xsl CLARIN/ZKP1929.ana.xml
 Error on line 1 column 50 of msd-fslib-sl.xml:
   SXXP0003  Error reported by XML parser: White spaces are required between publicId and systemId.
 org.xml.sax.SAXParseException; systemId: http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml; lineNumber: 1; columnNumber: 50; White spaces are required between publicId and systemId.
-make[1]: [Makefile:58: val-ana] Error 2 (ignored)
+make[1]: [Makefile:57: val-ana] Error 2 (ignored)
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2vert.xsl CLARIN/CPZ1906.ana.xml | bin/polish-ud.pl > CLARIN/CPZ1906.vert
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2vert.xsl CLARIN/ODZ1928.ana.xml | bin/polish-ud.pl > CLARIN/ODZ1928.vert
 java -jar /usr/share/java/saxon-he-10.2.jar -xsl:bin/siius2vert.xsl CLARIN/SlP1917.ana.xml | bin/polish-ud.pl > CLARIN/SlP1917.vert
@@ -193,12 +249,83 @@ rm -fr SI-IUS.TEI/*
 mkdir -p SI-IUS.TEI/Schema
 cp Docs/README.TEI.txt SI-IUS.TEI/00README.txt
 cp ../CLARIN/???????.xml SI-IUS.TEI
-cp ../Schema/tei_ius* SI-IUS.TEI.ana/Schema
-cp: target 'SI-IUS.TEI.ana/Schema': No such file or directory
-make[2]: *** [Makefile:9: pack] Error 1
+cp ../Schema/tei_ius* SI-IUS.TEI/Schema
+cp ../docs/tei*.* SI-IUS.TEI/Schema
+rm -f SI-IUS.TEI.zip
+zip -r SI-IUS.TEI.zip SI-IUS.TEI
+  adding: SI-IUS.TEI/ (stored 0%)
+  adding: SI-IUS.TEI/ZKP1929.xml (deflated 78%)
+  adding: SI-IUS.TEI/CPZ1906.xml (deflated 81%)
+  adding: SI-IUS.TEI/SlP1917.xml (deflated 72%)
+  adding: SI-IUS.TEI/00README.txt (deflated 56%)
+  adding: SI-IUS.TEI/Schema/ (stored 0%)
+  adding: SI-IUS.TEI/Schema/tei_ius_schema.xml (deflated 61%)
+  adding: SI-IUS.TEI/Schema/tei_ius.rng (deflated 89%)
+  adding: SI-IUS.TEI/Schema/tei-print.css (deflated 53%)
+  adding: SI-IUS.TEI/Schema/tei_ius.rnc (deflated 81%)
+  adding: SI-IUS.TEI/Schema/tei.css (deflated 75%)
+  adding: SI-IUS.TEI/Schema/tei_ius_doc.html (deflated 91%)
+  adding: SI-IUS.TEI/SlP1920.xml (deflated 71%)
+  adding: SI-IUS.TEI/ZKP1890.xml (deflated 77%)
+  adding: SI-IUS.TEI/UsV1910.xml (deflated 79%)
+  adding: SI-IUS.TEI/ODZ1928.xml (deflated 81%)
+rm -fr SI-IUS.ana/*
+mkdir -p SI-IUS.ana/Schema
+cp Docs/README.ana.txt SI-IUS.ana/00README.txt
+cp ../CLARIN/*.txt     SI-IUS.ana
+cp ../CLARIN/*.crp.xml SI-IUS.ana
+cp ../CLARIN/*.ana.xml SI-IUS.ana
+cp ../CLARIN/*.conllu  SI-IUS.ana
+cp ../CLARIN/*.vert    SI-IUS.ana
+cp ../Schema/tei_ius*  SI-IUS.ana/Schema
+cp ../docs/tei*.*      SI-IUS.ana/Schema
+rm -f SI-IUS.ana.zip
+zip -r SI-IUS.ana.zip SI-IUS.ana
+  adding: SI-IUS.ana/ (stored 0%)
+  adding: SI-IUS.ana/SlP1920.vert (deflated 89%)
+  adding: SI-IUS.ana/CPZ1906.ana.xml (deflated 92%)
+  adding: SI-IUS.ana/ODZ1928.ana.xml (deflated 92%)
+  adding: SI-IUS.ana/ZKP1929.ana.xml (deflated 93%)
+  adding: SI-IUS.ana/SlP1917.crp.xml (deflated 66%)
+  adding: SI-IUS.ana/ZKP1929.txt (deflated 71%)
+  adding: SI-IUS.ana/SlP1920.txt (deflated 63%)
+  adding: SI-IUS.ana/UsV1910.crp.xml (deflated 77%)
+  adding: SI-IUS.ana/UsV1910.conllu (deflated 87%)
+  adding: SI-IUS.ana/ZKP1890.vert (deflated 90%)
+  adding: SI-IUS.ana/00README.txt (deflated 55%)
+  adding: SI-IUS.ana/SlP1920.conllu (deflated 85%)
+  adding: SI-IUS.ana/ODZ1928.txt (deflated 68%)
+  adding: SI-IUS.ana/Schema/ (stored 0%)
+  adding: SI-IUS.ana/Schema/tei_ius_schema.xml (deflated 61%)
+  adding: SI-IUS.ana/Schema/tei_ius.rng (deflated 89%)
+  adding: SI-IUS.ana/Schema/tei-print.css (deflated 53%)
+  adding: SI-IUS.ana/Schema/tei_ius.rnc (deflated 81%)
+  adding: SI-IUS.ana/Schema/tei.css (deflated 75%)
+  adding: SI-IUS.ana/Schema/tei_ius_doc.html (deflated 91%)
+  adding: SI-IUS.ana/ZKP1890.conllu (deflated 86%)
+  adding: SI-IUS.ana/CPZ1906.crp.xml (deflated 77%)
+  adding: SI-IUS.ana/UsV1910.vert (deflated 90%)
+  adding: SI-IUS.ana/ZKP1890.txt (deflated 68%)
+  adding: SI-IUS.ana/SlP1920.crp.xml (deflated 66%)
+  adding: SI-IUS.ana/CPZ1906.vert (deflated 90%)
+  adding: SI-IUS.ana/ZKP1890.crp.xml (deflated 76%)
+  adding: SI-IUS.ana/ZKP1929.crp.xml (deflated 77%)
+  adding: SI-IUS.ana/CPZ1906.conllu (deflated 86%)
+  adding: SI-IUS.ana/SlP1917.ana.xml (deflated 91%)
+  adding: SI-IUS.ana/ODZ1928.conllu (deflated 87%)
+  adding: SI-IUS.ana/ODZ1928.vert (deflated 90%)
+  adding: SI-IUS.ana/CPZ1906.txt (deflated 68%)
+  adding: SI-IUS.ana/SlP1917.vert (deflated 89%)
+  adding: SI-IUS.ana/UsV1910.ana.xml (deflated 92%)
+  adding: SI-IUS.ana/ZKP1929.conllu (deflated 87%)
+  adding: SI-IUS.ana/SlP1917.txt (deflated 62%)
+  adding: SI-IUS.ana/ZKP1890.ana.xml (deflated 92%)
+  adding: SI-IUS.ana/ODZ1928.crp.xml (deflated 80%)
+  adding: SI-IUS.ana/ZKP1929.vert (deflated 91%)
+  adding: SI-IUS.ana/SlP1917.conllu (deflated 85%)
+  adding: SI-IUS.ana/UsV1910.txt (deflated 68%)
+  adding: SI-IUS.ana/SlP1920.ana.xml (deflated 91%)
 make[2]: Leaving directory '/home/project/corpora/SI-IUS/siius/Master'
-make[1]: *** [Makefile:29: pack] Error 2
 make[1]: Leaving directory '/home/project/corpora/SI-IUS/siius'
-Command exited with non-zero status 2
-4227.87user 333.30system 29:50.59elapsed 254%CPU (0avgtext+0avgdata 14665760maxresident)k
-2430120inputs+503216outputs (2major+57365692minor)pagefaults 0swaps
+19174.51user 482.69system 1:21:57elapsed 399%CPU (0avgtext+0avgdata 14630724maxresident)k
+6593528inputs+966440outputs (46337major+58016404minor)pagefaults 0swaps
