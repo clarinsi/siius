@@ -22,6 +22,7 @@
 
    <xsl:param name="homeURL">https://github.com/clarinsi/siius</xsl:param>
    <xsl:param name="homeLabel">SI-IUS</xsl:param>
+   <xsl:param name="documentationLanguage">sl</xsl:param>
 
    <xsl:param name="STDOUT">true</xsl:param>
    <!--xsl:param name="STDOUT">false</xsl:param>
