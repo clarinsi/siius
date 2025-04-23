@@ -9,7 +9,7 @@ schema:	val-odd
 val-odd:
 	$j tei_odds.rng tei_ius_schema.xml
 
-H = /project/corpora/TEI-schema/bin/
+H = /project/corpora/SI-IUS/siius/bin
 docs:	val-odd
 	Stylesheets/bin/teitohtml --profiledir=$H --profile=profile --odd ${PARAMS} \
 	../docs/tei_ius_doc.html
