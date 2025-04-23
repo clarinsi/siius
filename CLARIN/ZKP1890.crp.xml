@@ -50,7 +50,7 @@
                <p xml:lang="en">This work is licensed under the
           <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref>.</p>
             </availability>
-            <date when="2025-04-21">21. 4. 2025</date>
+            <date when="2025-04-22">22. 4. 2025</date>
          </publicationStmt>
          <sourceDesc>
             <bibl>
@@ -92,7 +92,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2025-04-21">
+         <change when="2025-04-22">
             <name>Tomaž Erjavec</name>: modifikacije TEI.</change>
          <change when="2019-06-11">
             <name>Tomaz Erjavec</name>: urejanje besedila v Wordu.</change>

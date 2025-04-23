@@ -3,7 +3,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Slovenski Pravnik. (1917) [SI-IUS]</title>
+            <title>Slovenski Pravnik. (1920) [SI-IUS]</title>
             <respStmt>
                <persName ref="https://orcid.org/0009-0007-9561-3991">Katja Škrubej</persName>
                <resp xml:lang="sl">Zagotovitev izvirnikov, vodja projekta</resp>
@@ -50,13 +50,13 @@
                <p xml:lang="en">This work is licensed under the
           <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref>.</p>
             </availability>
-            <date when="2025-04-21">21. 4. 2025</date>
+            <date when="2025-04-22">22. 4. 2025</date>
          </publicationStmt>
          <sourceDesc>
             <bibl>
                <title>Slovenski Pravnik.</title>
                <publisher>Društvo Pravnik</publisher>
-               <date when="1917">1917</date>
+               <date when="1920">1920</date>
             </bibl>
          </sourceDesc>
       </fileDesc>
@@ -77,7 +77,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2025-04-21">
+         <change when="2025-04-22">
             <name>Tomaž Erjavec</name>: modifikacije TEI.</change>
          <change when="2019-07-24">
             <name>Tomaz Erjavec</name>: urejanje besedila v Wordu.</change>
