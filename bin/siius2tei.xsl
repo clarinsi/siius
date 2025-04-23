@@ -224,14 +224,15 @@
   <xsl:template match="tei:divGen"/>
   
   <!-- Empty div excpet for pb -->
-  <xsl:template match="tei:div[tei:pb]">
+  <!-- Maybe we don't want this removal if pbs really correspond to PDF pbs -->
+  <!--xsl:template match="tei:div[tei:pb]">
     <xsl:if test="tei:*[name() != 'pb']">
       <xsl:copy>
         <xsl:apply-templates select="@*"/>
         <xsl:apply-templates select="tei:*|text()"/>
       </xsl:copy>
     </xsl:if>
-  </xsl:template>
+  </xsl:template-->
   
   <!-- Not sure what this is supposed to mean -->
   <xsl:template match="tei:hi[@rend='footnote_reference']">
