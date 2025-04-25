@@ -103,7 +103,7 @@ val-tei:
 	-$j Schema/tei_ius.rng CLARIN/*.xml
 pdfs:
 	cp DARIAH/cpz/A1CPP1906.pdf CLARIN/CPZ1906.pdf
-	# cp DARIAH/odz/???.pdf CLARIN/ODZ1928.xml
+	cp DARIAH/odz/Obcni_drzavljanski_zakonik_novo.pdf CLARIN/ODZ1928.pdf
 	cp DARIAH/slovenskipravnik1917/Slovenski_URN_NBN_SI_doc-4RRLU5S5.pdf CLARIN/SlP1917-1.pdf
 	cp DARIAH/slovenskipravnik1917/Slovenski_URN_NBN_SI_doc-WVXGJ01V.pdf CLARIN/SlP1917-2.pdf
 	cp DARIAH/slovenskipravnik1920/id-4695299.pdf CLARIN/SlP1920.pdf

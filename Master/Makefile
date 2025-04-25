@@ -23,3 +23,9 @@ pack:
 	cp ../docs/tei*.*      SI-IUS.ana/Schema
 	rm -f SI-IUS.ana.zip
 	zip -r SI-IUS.ana.zip SI-IUS.ana
+
+	rm -fr SI-IUS.pdf/*
+	cp Docs/README.pdf.txt SI-IUS.pdf/00README.txt
+	cp ../CLARIN/*.pdf SI-IUS.pdf
+	rm -f SI-IUS.pdf.zip
+	zip -r SI-IUS.TEI.pdf SI-IUS.pdf
